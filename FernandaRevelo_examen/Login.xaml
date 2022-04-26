@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FernandaRevelo_examen.MainPage">
+
+    <StackLayout>
+
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "></Image>
+        <Frame BackgroundColor="CadetBlue" Padding="16" CornerRadius="0">
+            <Label Text="EXAMEN FERNANDA REVELO" HorizontalTextAlignment="Center" TextColor="White" FontSize="28"/>
+        </Frame>
+
+       
+
+        <Entry x:Name="txtUser" Placeholder="Usuario" ></Entry>
+        <Entry x:Name="txtPass" Placeholder="Contraseña" IsPassword="True" />
+
+        <Button x:Name="btnAbrir" Text="Abrir" Clicked="btnAbrir_Clicked" ></Button>
+
+    </StackLayout>
+
+</ContentPage>

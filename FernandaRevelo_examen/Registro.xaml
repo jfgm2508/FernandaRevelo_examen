@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FernandaRevelo_examen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="REGISTRO DE USUARIO" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Blue" FontSize="25"/>
+
+            <Label x:Name="lbluser" FontSize="20" HorizontalTextAlignment="Center" TextColor="Black" BackgroundColor="Aqua"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Datos del Usuario" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="lbluser1" Placeholder="Ingrese Nombre del Usuario" Keyboard="Text" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Monto Inicial" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtMonto" Placeholder="Ingrese Monto Inicial " Keyboard="Numeric" Grid.Row="1" Grid.Column="1"></Entry>
+                <Label Text="Su pago en tres cuotas de:" FontSize="20" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtCuota" Placeholder="Valor de la cuota" IsReadOnly="True" Keyboard="Numeric"  Grid.Row="2" Grid.Column="1"></Entry>
+                <Entry x:Name="txtFinal"  IsReadOnly="True" TextColor="White" Grid.Row="3" Grid.Column="0"></Entry>
+                
+                <Button x:Name="btnCuota" Text="Calcular" Clicked="btnCuota_Clicked"  Grid.Row="3" Grid.Column="1"></Button>
+                
+            </Grid>
+
+            <Button x:Name="btnResumen" Text="GUARDAR" Clicked="btnResumen_Clicked"  Grid.Row="4" Grid.Column="2"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+       

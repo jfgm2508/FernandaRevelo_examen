@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FernandaRevelo_examen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="RESUMEN DEL USUARIO" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Blue" FontSize="25"/>
+
+            <Label x:Name="lbluser" FontSize="20" HorizontalTextAlignment="Center" TextColor="Black" BackgroundColor="Aqua"/>
+
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                </Grid>
+
+            <Label Text="Nombre del Usuario:" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+            <Label x:Name="lbluser1" FontSize="20" HorizontalTextAlignment="Center" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="Total a Pagar:" FontSize="20" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtFinal" Placeholder="total" IsReadOnly="True" FontSize="20" BackgroundColor="BlanchedAlmond" Grid.Row="1" Grid.Column="1"></Entry>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
